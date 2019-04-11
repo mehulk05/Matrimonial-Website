@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wedding Bells</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap css-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- dropsown style-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <!-- skin colour circles style-->
+
+    <!-- Tab button style -->
+<style>
+          
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+</style>
+</head>
+
+<body>
+
+    <div class="main">
+
+        <section class="signup">
+            <!-- <img src="images/signup-bg.jpg" alt=""> -->
+            <div class="container">
+                
+                <div class="signup-content">
+                     <p style = "font-size:22px; color:red; text-align:center">Wedding Bells <strong>!</strong></p>
+                    <div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'lifestyle')" >Personal Information</button>
+  <button class="tablinks" onclick="openCity(event, 'lifestyle')" >Physical Qualities</button>
+  <button class="tablinks" onclick="openCity(event, 'lifestyle')" >Community</button>
+  <button class="tablinks" onclick="openCity(event, 'lifestyle')" >Education and Occupation</button>
+  <button class="tablinks" onclick="openCity(event, 'lifestyle')" id="defaultOpen">Lifestyle and Family Value</button>
+<button class="tablinks" onclick="openCity(event, 'lifestyle')">Profile Pic</button>
+</div>
+                    
+            
+                    <div class="tabcontent" id="lifestyle">
+                    
+                       <form method="POST" id="signup-form" class="signup-form" action="SignUp/signUp_life.php">
+                        
+                        <h2 class="form-title">Lifestyle </h2> 
+                           
+                           <div class="row">
+                          
+        
+                                <div class="col-xs-3 form-group">
+                        
+                            Mother Tounge<br>
+                            <div class="selectdiv">
+                         <select class="form-control" id="mt" name="mt" required>
+        <option value="Hindi">Hindi</option>
+        <option value="Gujarati">Gujarati</option>
+        <option value="Punjabi">Punjabi</option>
+                             <option value="Malayalam">Malayalam</option>
+                             <option value="Kannad">Kannad</option>
+                             <option value="Urdu">Urdu</option>
+                             <option value="Sanskrit">Sanskrit</option>
+                             <option value="English">English</option>
+                            <option value="Bengali">Bengali</option>
+                                </select></div>
+                                
+                                 
+</div>
+                          <div class="col-xs-3 form-group">
+                            Your Family Type <br><div class="selectdiv">
+                         <select class="form-control" id="ft" name="ft" required>
+        <option value="Joint Family">Joint Family</option>
+        <option value="Nuclear Family">Nuclear Family</option>
+        <option value="Others">Others</option>
+
+                               </select></div>
+                               </div>
+                            
+                              <div class="col-xs-3 form-group"> 
+                               Number of Brothers <br>
+                            <input type="number" class="form-input" name="brs" id="brs" placeholder="eg.0" required/>
+                               </div>
+                               
+                                <div class="col-xs-3 form-group">
+                              Brothers Maratial Status  <br>
+                            <input type="text" class="form-input" name="BMS" id="BMS"  placeholder="NONE/Name :: Status">
+                           </div></div>
+                            <div class="row">
+                               <div class="col-xs-3 form-group">
+                               Number of Sisters <br>
+                            <input type="number" class="form-input" name="sis" id="sis" placeholder="eg.0" required/>
+                           </div>
+                               <div class="col-xs-3 form-group">
+                              Sisters Maratial Status  <br>
+                            <input type="text" class="form-input" name="SMS" id="SMS"  placeholder="Name :: Status">
+                           </div>
+                           
+                           </div>
+                           <div class="row">
+                           <div class="col-xs-3 form-group">
+                               Father's Name <br>
+                            <input type="text" class="form-input" name="f_n" id="f_n"  required/>
+                           </div>
+                            <div class="col-xs-3 form-group">
+                               Father's Profession <br>
+                            <input type="text" class="form-input" name="f_p" id="f_p"  required/>
+                           </div>
+                            <div class="col-xs-3 form-group">
+                               Mother's Name <br>
+                            <input type="text" class="form-input" name="m_n" id="m_n"  required/>
+                           </div>
+                            <div class="col-xs-3 form-group">
+                               Mother's Profession <br>
+                            <input type="text" class="form-input" name="m_p" id="m_p" required/>
+                           </div>
+                           </div>
+                             <div class="form-group"><center>
+                            <input type="submit" name="submit" id="submit" class="form-submit" value="Save"  />
+                        </center></div>
+                        </form>
+                    </div>
+          
+                </div>
+                </div>
+            
+        </section>
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+           
+}
+     document.getElementById("defaultOpen").click();</script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>

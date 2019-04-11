@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wedding Bells</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="css/bootstrap-responsive.css">
+      <style>
+      
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+      </style>
+</head>
+   
+<body>
+
+    <div class="main" >
+        
+        <section class="signup">
+            
+            <!-- <img src="images/signup-bg.jpg" alt=""> -->
+            <div class="container">
+                <div class="signup-content">
+                    <form method="POST" id="signup-form" class="signup-form" action="SignUp/signUp.php">
+                        <h2 class="form-title"><center>Create account</center></h2>
+                          <mono style="
+  width: auto !important
+">
+                          <div class="row">
+                            <div class="col-xs-3 form-group">
+                                <div class="form-group">
+                                    <input type="text" class="form-input" name="name" id="name" placeholder="Your Username" required/>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 form-group">
+                                <div class="form-group">
+                                    <input type="email" class="form-input" name="email" id="email" placeholder="Your Email" required/>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 form-group">
+                                <div class="form-group">
+                                    <input type="password" class="form-input" name="u_pswd" id="u_pswd"  placeholder="Password" required/>
+                                    <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 form-group">
+                        <div class="form-group">
+                            <input type="password" class="form-input" name="re_password" id="re_password" placeholder="Repeat your password" required />
+                              </div></div>
+                        </div>
+                        </mono>
+                        <center>
+                        <div class="form-group">
+                            <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" required />
+                            <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" name="submit" id="submit" class="form-submit" value="Next"  />
+                        </div>
+                    </form>
+                    <p class="loginhere">
+                        Have already an account ? <a href="../LogIn/logIn.html" class="loginhere-link">Login here</a>
+                    </p>
+                </div></center>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    </center>
+</body>
+</html>

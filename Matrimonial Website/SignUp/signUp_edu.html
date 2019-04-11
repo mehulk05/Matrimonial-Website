@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wedding Bells</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap css-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- dropsown style-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <!-- skin colour circles style-->
+
+    <!-- Tab button style -->
+<style>
+          
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+</style>
+</head>
+<body>
+
+    <div class="main">
+
+        <section class="signup">
+            <!-- <img src="images/signup-bg.jpg" alt=""> -->
+            <div class="container">
+                
+                <div class="signup-content">
+                     <p style = "font-size:22px; color:red; text-align:center">Wedding Bells <strong>!</strong></p>
+                    <div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'edu')" >Personal Information</button>
+  <button class="tablinks" onclick="openCity(event, 'edu')" >Physical Qualities</button>
+  <button class="tablinks" onclick="openCity(event, 'edu')" >Community</button>
+  <button class="tablinks" onclick="openCity(event, 'edu')" id="defaultOpen">Education and Occupation</button>
+  <button class="tablinks" onclick="openCity(event, 'edu')">Lifestyle and Family Value</button>
+<button class="tablinks" onclick="openCity(event, 'edu')">Profile Pic</button>
+</div>
+              
+                    <div class="tabcontent" id="edu">
+                       <form method="POST" id="signup-form" class="signup-form" action="SignUp/signUp_edu.php">
+                        
+                        <h2 class="form-title"><center>Education and Occupation</center> </h2>
+                        <div class="row">
+                            <div class="col-xs-3 form-group">
+                            Highest Educationn Level <br>
+                                <div class="selectdiv">
+                         <select class="form-control" id="hedu" name="hedu" required>
+        <option value="Doctrate">Doctrate</option>
+        <option value="Master">Master</option>
+        <option value="Honor's degree">Honor's degree</option>
+        <option value="Bachelors">Bachelors</option>
+        <option value="Undergraduate">Undergraduate</option>
+        <option value="Diploma">Diploma</option>
+        <option value="High School">High School</option>
+        <option value="Less than high school">Less than high school</option>
+                                </select></div>
+                            </div>   
+                           <div class="col-xs-3 form-group">
+                        
+                            Education Field<br>
+                            <input type="text" class="form-input" name="edufd" id="edufd" placeholder="field" required/>
+                        </div>
+                            
+                            <div class="col-xs-3 form-group">
+                        
+                            University of last Attended Course<br>
+                            <input type="text" class="form-input" name="uni" id="uni" placeholder="university" required/></div>
+                                <div class="col-xs- 3 form-group">
+                        
+                            College/school last attended<br>
+                            <input type="text" class="form-input" name="clg" id="clg" placeholder="college/school" required/>
+                        </div>
+                                
+                        
+                           </div>
+                           <div class ="row">
+                            
+                            <div class="col-xs-3 form-group">
+                             Work At <br>
+                                <div class="selectdiv">
+                         <select class="form-control" id="wk" name="wk" required>
+        <option value="Private Company">Private Company</option>
+        <option value="Governmnet/Public Sector">Government/ Public Sector</option>
+        <option value="Defense/Civil Sector">Defense/ Civil Sector</option>
+        <option value="Business/Self Employeed">Business/ Self Employeed</option>
+                             <option value="">Others</option>
+        <option value="Not Working">Not Working</option>
+                                </select></div>
+                            </div> 
+                              
+                            <div class="col-xs-3 form-group">
+                        
+                            Work As<br>
+                            <input type="text" class="form-input" name="as" id="as" placeholder="employment type" required/>
+                        </div>
+                                <div class="col-xs-3 form-group">
+                                    
+                                    
+                        Income 
+                             <br>       
+                        <div class="selectdiv">
+                         <select class="form-control" id="ic" name="ic" required>
+        <option value="0">0</option>
+        <option value="below 1 lakh">below 1 lakh</option>
+        <option value="1 lakh-2 lakh">1 lakh-2 lakh</option>
+        <option value="2 lakh-4 lakh">2 lakh-4 lakh</option>
+        <option value="4 lakh-7 lakh">4 lakh-7 lakh</option>
+        <option value="7 lakh-10lakh">7 lakh-10lakh</option>
+        <option value="10lakh-15lakh">10lakh-15lakh</option>
+        <option value="15lakh-20lakh">15lakh-20lakh</option>
+        <option value="20lakh-30lakh">20lakh-30lakh</option>
+        <option value="30lakh-50lakh">30lakh-50lakh</option>
+        <option value="50lakh-75lakh">50lakh-75lakh</option>
+        <option value="75lakh-1crore">75lakh-1crore</option>
+        <option value="greater than 1 crore">greater than 1 crore</option>
+        
+                                    </select>
+                                    </div>
+                            </div> 
+                           
+                           <div class="col-xs-3 form-group">
+                        
+                            Add something more!<br>
+                            <input type="text" class="form-input" name="des" id="des" placeholder="description" />
+                        </div>
+                           </div>
+                        <div class="form-group"><center>
+                            <input type="submit" name="submit" id="submit" class="form-submit" value="Save"  />
+                        </center></div>
+                        </form>     
+                    </div>
+               
+                </div>
+                </div>
+            
+        </section>
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+           
+}
+     document.getElementById("defaultOpen").click();</script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
